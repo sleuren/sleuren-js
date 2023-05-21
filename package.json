@@ -7,7 +7,7 @@
     "homepage": "https://sleuren.com",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sleuren/js-client.git"
+        "url": "git+https://github.com/sleuren/sleuren-js.git"
     },
     "bundlesize": [
         {
