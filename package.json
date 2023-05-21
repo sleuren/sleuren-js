@@ -1,0 +1,38 @@
+{
+    "name": "@sleuren/sleuren-js",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "version": "1.0.0",
+    "description": "Official sleuren SDK for JavaScript",
+    "homepage": "https://sleuren.com",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sleuren/js-client.git"
+    },
+    "bundlesize": [
+        {
+            "path": "./dist/index.js",
+            "maxSize": "7.5 kB"
+        }
+    ],
+    "scripts": {
+        "dev": "../../node_modules/webpack/bin/webpack.js --mode=development",
+        "build": "../../node_modules/webpack/bin/webpack.js --mode=production && $npm_execpath run bundlesize",
+        "bundlesize": "../../node_modules/bundlesize/index.js",
+        "run-link": "yarn link",
+        "install-deps": "yarn install"
+    },
+    "author": "hello@sleuren.com",
+    "license": "MIT",
+    "dependencies": {
+        "error-stack-parser": "^2.0.2"
+    },
+    "devDependencies": {
+        "@babel/preset-typescript": "^7.3.3",
+        "@types/stacktrace-js": "^0.0.32",
+        "ts-loader": "^6.2.2"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
